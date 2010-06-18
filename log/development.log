@@ -1,0 +1,336 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100617223410)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100617223410)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100617223410)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100617223410)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "price" float, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100617223410')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mProduct Create (388.2ms)[0m   [0;1mINSERT INTO "products" ("name", "updated_at", "price", "created_at") VALUES('Motorhead', '2010-06-17 22:51:57', 28.0, '2010-06-17 22:51:57')[0m
+  [4;35;1mProduct Create (0.4ms)[0m   [0mINSERT INTO "products" ("name", "updated_at", "price", "created_at") VALUES('Discharge', '2010-06-17 22:52:48', 25.0, '2010-06-17 22:52:48')[0m
+  [4;36;1mProduct Create (0.4ms)[0m   [0;1mINSERT INTO "products" ("name", "updated_at", "price", "created_at") VALUES('Black Panda', '2010-06-17 22:53:48', 20.0, '2010-06-17 22:53:48')[0m
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."name" = 'Motorhead') LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100617223410)
+Migrating to CreateStudents (20100617230338)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "age" integer, "course" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100617230338')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("students")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mStudent Create (0.4ms)[0m   [0;1mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('Renato', '2010-06-17 23:14:32', 22, 'Publicidade', '2010-06-17 23:14:32')[0m
+  [4;35;1mStudent Create (0.6ms)[0m   [0mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('Flavio', '2010-06-17 23:15:10', 20, 'Administracao', '2010-06-17 23:15:10')[0m
+  [4;36;1mStudent Create (0.4ms)[0m   [0;1mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('Rubens', '2010-06-17 23:15:37', 28, 'Letras', '2010-06-17 23:15:37')[0m
+  [4;35;1mStudent Create (0.4ms)[0m   [0mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('Vanessa', '2010-06-17 23:16:01', 32, 'Jornalismo', '2010-06-17 23:16:01')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mStudent Load (0.7ms)[0m   [0;1mSELECT * FROM "students" [0m
+  [4;35;1mStudent Create (0.6ms)[0m   [0mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('Fernanda', '2010-06-17 23:21:01', 24, 'Rails', '2010-06-17 23:21:01')[0m
+  [4;36;1mStudent Create (0.6ms)[0m   [0;1mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('Alberto', '2010-06-17 23:21:16', 40, 'JS', '2010-06-17 23:21:16')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mStudent Load (0.9ms)[0m   [0mSELECT * FROM "students" WHERE (age >= 18) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mStudent Create (0.7ms)[0m   [0mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('nome50', '2010-06-18 00:06:27', 50, 'Rails', '2010-06-18 00:06:27')[0m
+  [4;36;1mStudent Create (0.5ms)[0m   [0;1mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('nome100', '2010-06-18 00:06:27', 100, 'Rails', '2010-06-18 00:06:27')[0m
+  [4;35;1mStudent Create (0.4ms)[0m   [0mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('nome150', '2010-06-18 00:06:27', 150, 'Rails', '2010-06-18 00:06:27')[0m
+  [4;36;1mStudent Create (0.4ms)[0m   [0;1mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('nome200', '2010-06-18 00:06:27', 200, 'Rails', '2010-06-18 00:06:27')[0m
+  [4;35;1mStudent Create (0.4ms)[0m   [0mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('nome250', '2010-06-18 00:06:27', 250, 'Rails', '2010-06-18 00:06:27')[0m
+  [4;36;1mStudent Create (0.3ms)[0m   [0;1mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('nome300', '2010-06-18 00:06:27', 300, 'Rails', '2010-06-18 00:06:27')[0m
+  [4;35;1mStudent Create (0.4ms)[0m   [0mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('nome350', '2010-06-18 00:06:27', 350, 'Rails', '2010-06-18 00:06:27')[0m
+  [4;36;1mStudent Create (0.3ms)[0m   [0;1mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('nome400', '2010-06-18 00:06:27', 400, 'Rails', '2010-06-18 00:06:27')[0m
+  [4;35;1mStudent Create (0.4ms)[0m   [0mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('nome450', '2010-06-18 00:06:27', 450, 'Rails', '2010-06-18 00:06:27')[0m
+  [4;36;1mStudent Create (0.3ms)[0m   [0;1mINSERT INTO "students" ("name", "updated_at", "age", "course", "created_at") VALUES('nome500', '2010-06-18 00:06:27', 500, 'Rails', '2010-06-18 00:06:27')[0m
+  [4;35;1mStudent Load (2.0ms)[0m   [0mSELECT * FROM "students" [0m
+  [4;36;1mStudent Delete all (1.2ms)[0m   [0;1mDELETE FROM "students" WHERE (age < 18) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100617223410)
+Migrating to CreateStudents (20100617230338)
+Migrating to CreateCountries (20100618000735)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE TABLE "countries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100618000735')[0m
+Migrating to CreateStates (20100618000832)
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100617223410)
+Migrating to CreateStudents (20100617230338)
+Migrating to CreateCountries (20100618000735)
+Migrating to CreateStates (20100618000832)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mCREATE TABLE "states" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "country_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100618000832')[0m
+Migrating to CreateCities (20100618000908)
+  [4;35;1mSQL (5.0ms)[0m   [0mCREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "state_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100618000908')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("cities")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("countries")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("states")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("students")[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mCountry Create (0.6ms)[0m   [0mINSERT INTO "countries" ("name", "updated_at", "created_at") VALUES('Brasil', '2010-06-18 00:19:44', '2010-06-18 00:19:44')[0m
+  [4;36;1mState Load (0.2ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states".country_id = 1) [0m
+  [4;35;1mState Create (0.4ms)[0m   [0mINSERT INTO "states" ("name", "updated_at", "country_id", "created_at") VALUES('Rio Grande do Sul', '2010-06-18 00:21:28', 1, '2010-06-18 00:21:28')[0m
+  [4;36;1mState Create (0.4ms)[0m   [0;1mINSERT INTO "states" ("name", "updated_at", "country_id", "created_at") VALUES('Santa Catarina', '2010-06-18 00:22:01', 1, '2010-06-18 00:22:01')[0m
+  [4;35;1mState Create (0.6ms)[0m   [0mINSERT INTO "states" ("name", "updated_at", "country_id", "created_at") VALUES('Parana', '2010-06-18 00:22:40', 1, '2010-06-18 00:22:40')[0m
+  [4;36;1mCity Load (0.2ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities".state_id = 1) [0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO "cities" ("name", "updated_at", "state_id", "created_at") VALUES('Porto Alegre', '2010-06-18 00:24:11', 1, '2010-06-18 00:24:11')[0m
+  [4;36;1mCity Create (0.8ms)[0m   [0;1mINSERT INTO "cities" ("name", "updated_at", "state_id", "created_at") VALUES('Viamao', '2010-06-18 00:24:32', 1, '2010-06-18 00:24:32')[0m
+  [4;35;1mState Load (0.4ms)[0m   [0mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;36;1mCountry Load (0.4ms)[0m   [0;1mSELECT * FROM "countries" WHERE ("countries"."id" = 1) [0m
+  [4;35;1mCity Load (0.4ms)[0m   [0mSELECT * FROM "cities" LIMIT 1[0m
+  [4;36;1mState Load (0.2ms)[0m   [0;1mSELECT * FROM "states" WHERE ("states"."id" = 1) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mCountry Load (0.6ms)[0m   [0;1mSELECT * FROM "countries" LIMIT 1[0m
+  [4;35;1mState Load (1.0ms)[0m   [0mSELECT * FROM "states" WHERE ("states".country_id = 1) ORDER BY name[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100617223410)
+Migrating to CreateStudents (20100617230338)
+Migrating to CreateCountries (20100618000735)
+Migrating to CreateStates (20100618000832)
+Migrating to CreateCities (20100618000908)
+Migrating to CreateContacts (20100618010205)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" varchar(255), "name" varchar(255), "phone" varchar(255), "client_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100618010205')[0m
+Migrating to CreateClients (20100618010400)
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100618010400')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("cities")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("contacts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("countries")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("states")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("students")[0m
+  [4;36;1mClient Create (0.4ms)[0m   [0;1mINSERT INTO "clients" ("name", "updated_at", "created_at") VALUES('MMDA Digital', '2010-06-18 01:12:24', '2010-06-18 01:12:24')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mClient Load (0.6ms)[0m   [0;1mSELECT * FROM "clients" LIMIT 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT * FROM "clients" LIMIT 1[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".client_id = 1) [0m
+  [4;36;1mContact Create (0.6ms)[0m   [0;1mINSERT INTO "contacts" ("name", "updated_at", "client_id", "phone", "position", "created_at") VALUES('Renato', '2010-06-18 01:51:49', 1, '93811628', 'programador', '2010-06-18 01:51:49')[0m
+  [4;35;1mContact Create (0.4ms)[0m   [0mINSERT INTO "contacts" ("name", "updated_at", "client_id", "phone", "position", "created_at") VALUES('maiquel', '2010-06-18 01:52:47', 1, '', 'programador', '2010-06-18 01:52:47')[0m

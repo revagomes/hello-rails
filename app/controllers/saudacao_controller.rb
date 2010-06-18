@@ -1,0 +1,3 @@
+class SaudacaoController < ApplicationController
+
+end
